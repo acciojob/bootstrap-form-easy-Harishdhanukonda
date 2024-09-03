@@ -8,6 +8,89 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <style>
+    .form-container {
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius:   
+ 4px;
+    }
+    .invalid-feedback {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+  <div class="form-container">
+    <h1>Intern Application Form</h1>
+    <form id="intern-form">
+      <div class="form-group">
+        <label for="first-name-input">First Name</label>
+        <input type="text" class="form-control" id="first-name-input" name="first-name"   
+ required>
+        <div class="invalid-feedback">Please enter your first name.</div>
+      </div>
+      <div class="form-group">
+        <label for="last-name-input">Last   
+ Name</label>
+        <input type="text" class="form-control" id="last-name-input" name="last-name" required>
+        <div class="invalid-feedback">Please   
+ enter your last name.</div>
+      </div>
+      <div class="form-group">
+        <label for="email-input">Email</label>
+        <input type="email" class="form-control" id="email-input"   
+ name="email" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+      <div class="form-group">
+        <label for="college-input">College Name</label>
+        <input type="text" class="form-control" id="college-input"   
+ name="college" required>
+        <div class="invalid-feedback">Please enter your college name.</div>
+      </div>
+      <div class="form-group">
+        <label for="roll-no-input">Roll No</label>
+        <input   
+ type="number" class="form-control" id="roll-no-input" name="roll-no" required>
+        <div class="invalid-feedback">Please enter your roll number.</div>
+      </div>
+      <div class="form-group">
+        <label   
+ for="graduation-year-select">Graduation Year</label>
+        <select class="form-control" id="graduation-year-select"   
+ name="graduation-year" required>
+          <option value="">Select Graduation Year</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option   
+ value="2022">2022</option>
+          <option value="2023">2023</option>
+        </select>
+        <div class="invalid-feedback">Please select your graduation year.</div>
+      </div>
+      <div class="form-group">   
+
+        <input type="checkbox" id="conditions-checkbox" name="conditions" required>
+        <label for="conditions-checkbox">I agree to the terms and conditions.</label>
+        <div class="invalid-feedback">Please agree to the terms and conditions.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>   
+
+    </form>
+  </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
